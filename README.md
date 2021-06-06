@@ -2,7 +2,7 @@
 
 To run the program, execute train_and_test.py
 
-This repository contains code generating a random maze environment and training Reinofrcement Learning agent to reach the goal in the maze. coursework_specification contains description of all files. The description below is regarding agent.py file, which contains the learning and behaviours of the agent
+This repository contains code generating a random maze environment and training Reinforcement Learning agent to solve it. The coursework_specification PDF contains description of all files. The description below is regarding agent.py file, which contains the learning and behaviours of the agent
 
 The implemented solution for solving the maze environment is Deep Q-Learning with Replay Buffer and Target Network. It additionally contains an evaluation check after each training episode that can stop the training given the agent reaches the goal with greedy policy. The hyper parameters were hand-tuned using trial and error method combined with understanding of the underlying principles. Alternative implementation included a variation of Prioritised Experience Replay, however it was found that it actually worsen the performance of the network due to added computational complexity. The implementation is outlined below.
 
